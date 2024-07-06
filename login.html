@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login </title>
+</head>
+
+<style>
+
+.container {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  
+
+}
+
+.form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EDDCD9;
+  height: auto;
+  width: auto;
+  border: 2px solid #264143;
+  border-radius: 20px;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+}
+
+.title {
+  color: #264143;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.sub_title {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 10px;
+}
+
+.form_style {
+  outline: none;
+  border: 2px solid #264143;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+  width: 290px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.form_style:focus, .btn:focus {
+  transform: translateY(4px);
+  box-shadow: 1px 2px 0px 0px #E99F4C;
+}
+
+.btn {
+  padding: 15px;
+  margin: 25px 0px;
+  width: 290px;
+  font-size: 15px;
+  background: #DE5499;
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 3px 3px 0px 0px #E99F4C;
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+.link {
+  font-weight: 800;
+  color: red;
+  padding: 5px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+
+.left-section, .right-section {
+    width: 85%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-section img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.location, .phone, .email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500px;
+}
+
+.location i, .phone i, .email i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.location p, .phone p, .email p {
+    font-size: 14px;
+    color: #333;
+}
+
+.right-section .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.right-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-section li {
+    margin-bottom: 10px;
+}
+
+.right-section li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.right-section li a:hover {
+    color: #007bff;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.payment-methods img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    cursor: pointer;
+}
+
+.cart-icon i {
+    font-size: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+div.h2{
+  background-color: black;}
+</style>
+<body>
+    <div class="container">
+        <div class="form_area">
+            <p class="title">SIGN UP</p>
+            <form action="">
+                <div class="form_group">
+                    <label class="sub_title" for="name">Name</label>
+                    <input placeholder="Enter your full name" class="form_style" type="text">
+                </div>
+                <div class="form_group">
+                    <label class="sub_title" for="email">Email</label>
+                    <input placeholder="Enter your email" id="email" class="form_style" type="email">
+                </div>
+                <div class="form_group">
+                    <label class="sub_title" for="password">Password</label>
+                    <input placeholder="Enter your password" id="password" class="form_style" type="password">
+                </div>
+                <div>
+                    <button class="btn">SIGN UP</button>
+                    <p>Have an Account? <a class="link" href="">Login Here!</a></p><a class="link" href="">
+                </a></div><a class="link" href="">
+            
+        </a></form></div><a class="link" href="">
+    </a></div>
+
+
+
+    <div class="container">
+        <div class="left-section">
+            <img src="logo.png.png" alt="Fruits Shop Logo">
+            <p>We are from  fruit store with an aim to simplify your daily shopping experience. We deliver you the same products you get in your regular supermarket and more with the best price at your door steps..</p>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Dabua colony, Faridabad ,Sector 40 Haryana
+                  Dabua sabji mandi 
+                </p>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                <p>Phone - +91 87644 44424</p>
+            </div>
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <p>Email - fruitshopdevsharma@gmail.com</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="section-title"><u>INFORMATION</u></div>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul> <br>
+            <div class="section-title"><u>MY ACCOUNT</u></div>
+            <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">Track Order</a></li>
+            </ul>
+            <br>
+            <div class="section-title"><u>STAY CONNECTED</u></div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="section-title"><u>WE ACCEPT</u></div>
+            <div class="payment-methods">
+              <img src="paytm.png" alt="Paytm Logo">
+              <img src="gpay.jpeg" alt="Google Pay Logo">
+              <img src="phonepay.png" alt="PhonePe Logo">
+            </div>
+            <div class="copyright">
+                <p>© Copyright 2024, The Fruits Shop. All Rights Reserved.</p>
+            </div>
+        </div>
+      </div>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+
+
+    <script >
+        // Get the input fields
+const usernameInput = document.getElementById('username');
+const passwordInput = document.getElementById('password');
+const loginButton = document.getElementById('login-button');
+const errorMessage = document.getElementById('error-message');
+
+// Add an event listener to the login button
+loginButton.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  // Get the input values
+  const username = usernameInput.value.trim();
+  const password = passwordInput.value.trim();
+
+  // Validate the input values
+  if (username === '' || password === '') {
+    errorMessage.textContent = 'Please fill in both fields';
+    return;
+  }
+
+  // Make a request to the server to authenticate the user
+  fetch('/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ username, password })
+  })
+  .then(response => response.json())
+  .then((data) => {
+    if (data.success) {
+      // Login successful, redirect to the dashboard page
+      window.location.href = '/dashboard';
+    } else {
+      // Login failed, display an error message
+      errorMessage.textContent = 'Invalid username or password';
+    }
+  })
+  .catch((error) => {
+    console.error(error);
+    errorMessage.textContent = 'An error occurred, please try again';
+  });
+});
+    </script>
+</body>
+</html>
