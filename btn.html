@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    
+
+    
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card .price {
+  font-size: 1.2em;
+  color: red;
+  margin-bottom: 5px;
+}
+
+.card .quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card .quantity button {
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.card .quantity input {
+  width: 40px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.card .add-to-cart {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-color: #f1f1f1;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-top: 5px;
+}
+
+.card .price {
+  font-size: 18px;
+  color: #ff5722;
+}
+
+.card .quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card .quantity button {
+  border: none;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card .quantity input {
+  width: 30px;
+  text-align: center;
+  border: none;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.card .add-to-cart {
+  display: block;
+  width: 100%;
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+/* footer */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    justify-self: center;
+  text-align: center;
+}
+
+.container {
+    display: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.left-section, .right-section {
+    width: 95%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-section img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.location, .phone, .email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500px;
+}
+
+.location i, .phone i, .email i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.location p, .phone p, .email p {
+    font-size: 14px;
+    color: #333;
+}
+
+.right-section .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.right-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-section li {
+    margin-bottom: 10px;
+}
+
+.right-section li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.right-section li a:hover {
+    color: #007bff;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.payment-methods img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+
+
+</style>
+<title>Great Deals</title>
+</head>
+<body>
+
+
+    <div class="container1">
+        <img src="slider4.jpg" alt="Fruits" class="image" width="100%">
+       
+      </div>
+      <h2> Here's   20 % Off Of Every Item</h2>
+
+
+
+<div class="container">
+  <div class="card">
+    <img src="BlueBerry.jpg" alt="Blueberry">
+    <h3>BLUEBERRY</h3>
+    <p class="price">₹199.00</p>
+    <p>1 Kg</p>
+    <div class="quantity">
+      
+      <input type="number" value="1">
+      
+    </div>
+    <button class="add-to-cart">ADD TO CART</button>
+  </div>
+
+  
+
+  <div class="card">
+    <img src="RedGrape.jpg" alt="Red Grapes">
+    <h3>RED GRAPES</h3>
+    <p class="price">₹320.00</p>
+    <p>1 Kg</p>
+    <div class="quantity">
+      <input type="number" value="1">
+    </div>
+    <button class="add-to-cart">ADD TO CART</button>
+  </div>
+
+  
+  <div class="card">
+    <img src="RedGrape.jpg" alt="Red Grapes">
+    <h3>RED GRAPES</h3>
+    <p class="price">₹320.00</p>
+    <p>1 Kg</p>
+    <div class="quantity">
+      <input type="number" value="1">
+    </div>
+    <button class="add-to-cart">ADD TO CART</button>
+  </div>
+  <div class="card">
+    <img src="AVOCADO.jpg" alt="Avocado Indian">
+    <h3>AVACADO INDIAN</h3>
+    <p class="price">₹139.00</p>
+    <p>1 PCS</p>
+    <div class="quantity">
+      <input type="number" value="1">
+    </div>
+
+    <button class="add-to-cart">ADD TO CART</button>
+  </div>
+  <div class="card">
+    <img src="kiwiGolden.jpg" alt="Kiwi Golden">
+    <h3>KIWI GOLDEN</h3>
+    <p class="price">₹260.00</p>
+    <p>3 PCS BOX</p>
+    <div class="quantity">
+      <input type="number" value="1">
+    </div>
+    <button class="add-to-cart">ADD TO CART</button>
+  </div>
+
+  <div class="card">
+    <img src="fresh-honey-500x500.jpg" alt="Kashmir Honey">
+    <h3>KASHMIR HONEY</h3>
+    <p class="price">₹649.00</p>
+    <p>600 ML</p>
+    <div class="quantity">
+      <input type="number" value="1">
+    </div>
+    <button class="add-to-cart">ADD TO CART</button>
+  </div>
+
+  <div class="card">
+    <img src="miages.jpeg" alt="Medjool Dates">
+    <h3>MEDJOUL DATES</h3>
+    <p class="price">₹ 795.00</p>
+    <p>500 GRAM</p>
+    <div class="quantity">
+      <input type="number" value="1">
+    </div>
+    <button class="add-to-cart">ADD TO CART</button>
+  </div>
+</div>
+
+
+
+<div class="container">
+
+    <div class="card">
+      <img src="21-1.jpg" alt="Mango">
+      <h3>RATNAGIRI ALPHONSO</h3>
+      <p class="price">₹ 1,699.00</p>
+      <p>1 BOX(DOZEN)</p>
+      <div class="quantity">
+        <input type="text" value="1">
+      </div>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+  
+    <div class="card">
+      <img src="golden apple.jpg" alt="Apple">
+      <h3>GOLDEN APPLE</h3>
+      <p class="price">₹ 260.00</p>
+      <p>1 KG</p>
+      <div class="quantity">
+        <input type="text" value="1">
+      </div>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+  
+    <div class="card">
+      <img src="orange.jpg" alt="Orange">
+      <h3>MANDRINE ORANGE</h3>
+      <p class="price">₹ 320.00</p>
+      <p>1 BOX</p>
+      <div class="quantity">
+        <input type="text" value="1">
+      </div>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+  
+    <div class="card">
+      <img src="anjeer_1_1.jpg" alt="Anjeer">
+      <h3>AFGHAN ANJEER</h3>
+      <p class="price">₹ 400.00</p>
+      <p>250 GRAM</p>
+      <div class="quantity">
+        <input type="text" value="1">
+      </div>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+  
+    <div class="card">
+      <img src="MIX SEED.jpg" alt="Seed Mix">
+      <h3>SEED MIX</h3>
+      <p class="price">₹ 275.00</p>
+      <p>300 GRAM</p>
+      <div class="quantity">
+        <input type="text" value="1">
+      </div>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+  
+    
+    <div class="card">
+        <img src="lichi.jpeg" alt="Seed Mix">
+        <h3>Lichi</h3>
+        <p class="price">₹ 275.00</p>
+        <p>300 GRAM</p>
+        <div class="quantity">
+          <input type="text" value="1">
+        </div>
+        <button class="add-to-cart">ADD TO CART</button>
+      </div>
+    
+    <div class="card">
+      <img src="frozen blueberry.jpg" alt="Blueberry">
+      <h3>DELISHH BLUEBERRY</h3>
+      <p class="price">₹ 649.00</p>
+      <p>500 GRAM</p>
+      <div class="quantity">
+        <input type="text" value="1">
+      </div>
+      <button class="add-to-cart">ADD TO CART</button>
+    </div>
+  
+  </div>
+    
+    
+  <!-- footer -->
+
+  <div class="container">
+    <div class="left-section">
+        <img src="logo.png.png" alt="Fruits Shop Logo">
+        <p>We are from  fruit store with an aim to simplify your daily shopping experience. We deliver you the same products you get in your regular supermarket and more with the best price at your door steps..</p>
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Dabua colony, Faridabad ,Sector 40 Haryana
+              Dabua sabji mandi 
+            </p>
+        </div>
+        <div class="phone">
+            <i class="fas fa-phone"></i>
+            <p>Phone - +91 87644 44424</p>
+        </div>
+        <div class="email">
+            <i class="fas fa-envelope"></i>
+            <p>Email - fruitshopdevsharma@gmail.com</p>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="section-title"><u>INFORMATION</u></div>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Sitemap</a></li>
+        </ul> <br>
+        <div class="section-title"><u>MY ACCOUNT</u></div>
+        <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">My Cart</a></li>
+            <li><a href="#">Track Order</a></li>
+        </ul>
+        <br>
+        
+       
+        <div class="section-title"><u>WE ACCEPT</u></div>
+        <div class="payment-methods">
+          <img src="paytm.png" alt="Paytm Logo">
+          <img src="gpay.jpeg" alt="Google Pay Logo">
+          <img src="phonepay.png" alt="PhonePe Logo">
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2024, The Fruits Shop. All Rights Reserved.</p>
+        </div>
+    </div>
+  </div>
+ 
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+
+  
+
+
+  
+</body>
+</html>
